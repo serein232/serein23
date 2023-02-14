@@ -1,0 +1,626 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Lobster&family=Roboto+Serif:opsz@8..144&display=swap');
+:root
+{
+    --black:#000000;
+    --brow:#c4933e;
+    --light:#c5c5c5;
+    --white:#ffff;
+}
+body
+{
+    margin: 0;
+    padding: 0 auto;
+}
+/*Header*/
+header
+{
+    background-color: var(--black);
+    color: var(--white);
+}
+header .header_on
+{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    color: var(--white);
+   font-size: larger;
+   border-bottom: 1px solid var(--light);
+}
+header .header_on ul li:hover
+{
+    color: var(--brow);
+}
+header .header_on ul li
+{
+    list-style: none;
+}
+header .header_on ul.local
+{
+    display: flex;
+}
+header .header_on ul.local li
+{
+    margin-left: 40px;
+}
+header .header_under
+{
+    display: flex;
+    border-bottom: 1px solid var(--white);
+}
+header .header_under .logo
+{
+    font-family: 'Lobster', cursive;
+    color: var(--white);
+    font-size: 50px;
+    padding: 20px;
+    margin-left: 50px;
+    color: var(--brow);
+}
+header .header_under .logo:hover
+{
+    color: var(--brow);
+}
+header .header_under ul
+{
+    display: flex;
+    align-self: center;
+    margin-left: 80px;
+    list-style: none;
+}
+header .header_under ul li
+{
+    margin-left: 50px;
+    font-size: larger;
+}
+header .header_under ul li:hover  
+{
+    color: var(--brow);
+}
+header .header_under ul.menu li a
+{
+color: var(--white);
+text-decoration: none;
+font-size: 20px;
+}
+header .header_under ul.menu li.active a
+{
+ color: #c4933e;
+}
+header .header_under ul.menu li a:hover  
+{
+    color: var(--brow);
+}
+/*Products*/
+header .header_under ul.menu li a .producst
+{
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+  
+  header .header_under ul.menu li.producst
+{
+    display: inline-block;
+}
+  
+  header .header_under ul.menu .product_list 
+{
+    display: none;
+    position: absolute;
+    background-color: var(--light);
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px var(--black);
+    z-index: 1;
+    border-radius: 20px;
+    
+}
+  
+  header .header_under ul.menu .product_list a 
+{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+  
+  header .header_under ul.menu .product_list a:hover 
+{
+    background-color: var(--white);
+    border-radius: 20px;
+}
+  
+  header .header_under ul.menu .producst:hover .product_list 
+{
+    display: block;
+}
+
+/*CONTAINER*/
+.container .home .title
+{
+    text-align: center;
+}
+.container .home .title h2
+{
+    font-size: xx-large;
+    color: var(--brow);
+}
+.container .home .title p
+{
+    padding:20px;
+}
+.container .home .adv img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    image-rendering: pixelated;
+}
+.container .home .album
+{
+    display: grid;
+    grid-template-columns: auto auto auto ;
+    justify-content: center;
+    column-gap: 100px;
+    background-color: var(--black);
+    padding: 30px;
+}
+.container .home .album img
+{
+    border-radius: 20px
+}
+.container .home .part2
+{
+    display: grid;
+    grid-template-columns: 40% auto;
+    margin-top: 20px;
+   
+}
+.container .home .part2 .pic2
+{
+    height: 100%;
+    
+}
+.container .home .part2 .pr
+{
+    display: grid;
+    grid-template-rows: auto auto;
+    background-color: var(--light);
+  
+}
+.container .home .part2 .pr .pic
+{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-bottom: 90px;
+   
+}
+.container .home .part2 .pr .pic .daynit
+{
+    width: 60vh;
+    height: 70vh;
+}
+.container .home .part2 .pr .pic .daynit1
+{
+    width: 60vh;
+    height: 70vh;
+}
+.container .home .part2 .pr .pic img
+{
+    margin-top: 50px;
+    margin-left: 15px;
+    border-radius: 30px;
+}
+.container .home .part2 .pr .sale
+{
+    text-align: center;
+}
+.container .home .part2 .pr .sale h2
+{
+    font-size: 50px;
+    background-color: var(--brow);
+    height: 20vh;
+    border-radius: 30px;
+    width: 70%;
+    margin-left: 100px;
+   
+}
+.container .home .part2 .pr .sale p
+{
+  font-size: xx-large;
+  color: var(--brow);
+  font-family: 'Lobster', cursive;
+}
+.container .home .part2 .pr .price 
+{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    column-gap: 30px;
+    margin-bottom: 40px;
+}
+.container .home .part2 .pr .price button.btn1
+{
+    width: 30vh;
+    height: 10vh;
+    margin-left: 30%;
+    border: 1px solid var(--brow);
+    border-radius: 30px;
+    background-color: var(--brow);
+    font-size: larger; 
+    font-weight: bold;
+    color: var(--white);
+}
+.container .home .part2 .pr .price button.btn2
+{
+    width: 30vh;
+    height: 10vh;
+    margin-left: 20%;
+    border: 1px solid var(--brow);
+    border-radius: 30px;
+    background-color: var(--brow);
+    font-size: larger; 
+    font-weight: bold;
+    color: var(--white);
+}
+.container .home .part2 .pr .price button:hover
+{
+    color: var(--black);
+}
+.container .home .part3 .title
+{
+
+}
+.container .home .part3 h3
+{
+    text-align: center;
+    font-size: xx-large;
+    font-family: 'Lobster', cursive;
+}
+.container .home .part3 .combo .pic
+{
+    display: grid;
+    grid-template-columns: auto auto auto auto ;
+    background-color: var(--light);
+    
+}
+.container .home .part3 .combo .pic img
+{
+    height: 50vh;
+    width: 30vh;
+    justify-self: center;
+    object-fit: contain;
+    image-rendering: pixelated;
+    padding: 20px;
+    border-radius: 40px;
+}
+.container .home .part3 .trouble .pic
+{
+    display: grid;
+    grid-template-columns: auto auto auto auto ;
+    background-color: var(--light);
+    
+}
+.container .home .part3 .trouble .pic img
+{
+    height: 40vh;
+    width: 30vh;
+    justify-self: center;
+    image-rendering: pixelated;
+    padding: 20px;
+}
+.container .home .part3 .shirt .pic
+{
+    display: grid;
+    grid-template-columns: auto auto auto auto ;
+    background-color: var(--light);
+    
+}
+.container .home .part3 .shirt .pic img
+{
+    height: 40vh;
+    width: 30vh;
+    justify-self: center;
+    image-rendering: pixelated;
+    padding: 20px;
+}
+/*About*/
+.container .about 
+{
+    padding: 30px;
+    margin-left: 20px;
+}
+.container .about h2
+{
+    color: var(--brow);
+    font-size: xx-large;
+    border-bottom: 1px solid var(--light);
+    padding: 20px;
+}
+
+/*Products*/
+.container .product
+{
+    display: grid;
+    grid-template-columns: 30% auto;
+}
+.container .product .search table
+{
+    border-radius: 20px;
+    border: 1px solid var(--black);
+    height: 30vh;
+    width: 40vh;
+    margin-top: 20px;
+    margin-left: 35px;
+}
+.container .product .search table th
+{
+ height: 40px;
+ font-size: larger;
+ font-weight: bolder;
+ color: var(--brow);
+ background-color:  var(--black);
+ border-radius: 20px;
+
+}
+.container .product .search .table1
+{
+ height: 30vh;
+ width: 40vh;
+ border: 1px solid ;
+ margin-left: 40px; 
+ margin-top: 40px;
+}
+.container .product .search .table1 tr td
+{
+  padding: 20px;
+  border-bottom: 1px solid var(--black);
+  border-radius: 20px;
+  font-weight: bold;
+  
+}
+.container .product .search .table1 tr td.end
+{
+    border-bottom: none;
+}
+.container .product .search .table1 tr td:hover
+{
+    background-color: var(--light);
+}
+.container .product .search .table2
+{
+    height: 20vh;
+}
+.container .product .search .table2 tr td input
+{
+margin-left: 25px;
+border: 1px solid var(--black);
+width: 30vh;
+height: 25px;
+border-radius: 30px;
+font-style: italic;
+}
+.container .product .search .table2 tr td input:hover
+{
+    background-color: var(--brow);
+}
+.container .product .search .table3
+{
+    border: none;  
+}
+.container .product .search .table3 tr td
+{
+  color: var(--brow);
+  font-size: large;
+ text-decoration: underline;
+ background-color: var(--black);
+ border-radius: 30px;
+ border: none;
+}
+.container .product .search .table3 tr td input
+{
+    margin-left: 30px;
+}
+.container .product .search .table4 tr td button
+{
+    width: 70px;
+    height: 35px;
+    background-color: var(--white);
+    border: 1px solid var(--black);
+    margin-top: 5px;
+    margin-left: 5px;
+    border-radius:20px ;
+    font-weight: bold;
+}
+.container .product .search .table4 tr td button.no1:hover
+{
+    background-color: aqua;
+}
+.container .product .search .table4 tr td button.no2:hover
+{
+    background-color: wheat;
+}
+.container .product .search .table4 tr td button.no3:hover
+{
+    background-color: pink;
+}
+.container .product .search .table4 tr td button.no4:hover
+{
+    background-color: #ff8811;
+}
+.container .product .search .table4 tr td button.no5:hover
+{
+    background-color: #252525;
+    color: var(--white);
+}
+.container .product .search .table4 tr td button.no6:hover
+{
+    background-color: gray;
+}
+.container .product .content
+{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 20px;
+    row-gap: 20px;
+    padding: 45px;
+}
+.container .product .content .list
+{
+   
+    width: 40vh;
+    background-color: var(--light);
+    border-radius: 20px;
+}
+.container .product .content .list img
+{
+    height: 50vh;
+    width: 100%;
+    image-rendering: pixelated;
+    border-bottom: 1px solid var(--black);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;  
+}
+.container .product .content .list h2
+{
+    margin-left: 30px;
+    color: var(--brow);
+}
+.container .product .content .list p
+{
+    margin-left: 30px;
+    font-size: 20px;
+    margin-top: -20px;
+}
+.container .product .content .list .btn
+{
+ margin-left: 20px;
+ padding: 10px;
+ margin-top: -20px;
+}
+.container .product .content .list .btn button
+{
+    width: 50px;
+    height: 30px;
+    color: var(--white);
+    background-color: var(--brow);
+    border: none;
+    border-radius: 30px;
+}
+.container .product .content .list .btn button:hover
+{
+    color: var(--black);
+}
+.user .content
+{
+    display: grid;
+    grid-template-columns: 20% auto;
+    column-gap: 0px;
+}
+.user .content .right{
+
+    background-color: var(--white);
+    border-radius: 20px;
+    height: 60vh;
+}
+.user .content .right .profile-user
+{
+    display: grid;
+    grid-template-columns: 25% auto;
+}
+.user .content .right .img img
+{
+    height: 150px;
+    margin-left: 20px;
+    border-radius: 100px;
+    border: 5px solid var(--orange);
+    margin-top: 20px; 
+    border: 3px solid var(--brow);
+}
+.user .content .right table
+{
+    height: 50vh;
+    margin-top: 30px;
+    margin-right: 15px;
+    border: none;
+  
+}
+.user .content .right table th
+{
+ border: none;
+ font-size: x-large;
+ color:  var(--brow);
+}
+.user .content .right table label
+{
+ font-size: larger;
+ font-weight: 500;
+}
+.user .content .right table td
+{
+    display: grid;
+    grid-template-columns: 30% auto;
+    border: none;
+}
+.user .content .right table td.sex
+{
+    display: flex;
+}
+.user .content .right table td.sex .chose
+{
+    margin-left: 200px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    display: flex;
+}
+.user .content .right table td.sex input
+{
+  margin-left: 50px;
+}
+.user .content .right table td.sex .chose ipnut
+{
+  padding:10px;
+}
+.user .content .left ul li
+{
+ padding: 10px;
+ font-weight: 600;
+ 
+}
+.user .content .left ul 
+{
+    border-bottom: 2px solid var(--brow);
+}
+.user .content .left ul li:hover
+{
+    color: var(--brow);
+}
+
+/*Footer*/
+footer
+{
+    background-color: var(--black);
+    color: var(--light);
+    margin-bottom: -20px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin-top: 20px;
+    font-weight:lighter;
+}
+footer ul li
+{
+    list-style: none;
+    line-height: 40px;
+}
+footer ul li i
+{
+    padding:20px;
+}
+footer h2
+{
+    margin-left: 40px;
+}
+footer ul li:hover
+{
+    color: var(--brow);
+}
